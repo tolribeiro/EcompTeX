@@ -1,0 +1,96 @@
+%  _____________________________________
+%
+%   Trabalho Acadêmico (LaTeX template)
+%  _____________________________________
+%  
+%  * Universidade de Pernambuco 
+%  * Por Thiago Ribeiro. 		
+%
+%  Fique à vontade para modificar o documento e deixe ao 
+%  seu gosto. Bom proveito! :)
+
+\documentclass[12pt]{article}
+\usepackage[misc]{ifsym}
+\usepackage{amsmath}
+\usepackage{MnSymbol}
+\usepackage{wasysym}
+\usepackage[top=2.5cm, left=3cm, right=3cm, bottom=2cm, headheight=110pt]{geometry}
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{color, colortbl}
+\usepackage{fancyhdr}
+\usepackage{natbib}
+\pagestyle{fancy}
+\usepackage{lipsum}
+
+\linespread{1.27} % espaçamento entre linhas 
+
+% Início do documento
+\begin{document}
+	\thispagestyle{empty}
+	% \begin{center}
+	% 	\includegraphics[scale=0.12]{../imagens/brasao.jpg}\\
+	% 	\large{{\sc Universidade de Pernambuco}}
+	% \end{center}
+	\begin{figure}[!htp]
+	    {\includegraphics[scale=0.2, width=2.4cm]{../imagens/poli.png}}\hfill%
+	    {\includegraphics[scale=0.3, width=3.7cm]{../imagens/ecomp.png}}%
+  	\end{figure}
+	\vspace{3.5cm}
+
+	\begin{center}
+		% \PaperPortrait % Substituir por outro ícone caso queira		
+		\Large{ \ {\bf Título do Documento}}\\[0.2cm]
+		\large{Sub-título do Documento}
+	\end{center}
+	
+	\vspace{5cm}
+	\begin{center}
+		\begin{tabular}{rl}
+			{\bf Disciplina:} & {\sf COMP01 - Nome da Disciplina}\\
+			{\bf Professor:} & {\sf Nome do professor}\\
+			{\bf Aluno:} & {\sf Nome do aluno}\\
+			{\bf Outro:} & {\sf Conteúdo adicional}\\
+		\end{tabular}
+	\end{center}
+	\vspace{3.5cm}
+	\begin{center}
+		{\sc mês ano}\\{\sc Outra informação}\\
+	\end{center}
+	\newpage
+
+	\tableofcontents
+	
+	\newpage
+	
+	\section{Introdução}
+	\subsection{Objetivo}
+	
+	\lipsum[2]
+	
+	\subsection{Escopo do Projeto}
+	
+	\begin{itemize}
+		\item Descrição do item:
+		\begin{itemize}
+			\item {\it Sub-item 1};
+			\item {\it Sub-item 2};
+			\item {\it Sub-item 3;}
+		\end{itemize}
+	\end{itemize}
+	
+	\section{Título}
+	\subsection{Sub-título}
+
+	\lipsum[2]
+
+	\section{Referências}
+	
+	% \bibliographystyle{ieee}
+
+	% \bibliography{research}
+
+	% Bla bla bla\cite{ahu61}
+	
+\end{document}
