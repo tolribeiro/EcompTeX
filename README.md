@@ -1,7 +1,7 @@
 ﻿EcompTeX
 ===========================
 
-O *ecompTeX* é um conjunto de templates em LaTeX criados durante a graduação em Engenharia de Computação pela Escola Politécnica da Universide de Pernambuco (POLI-UPE).
+O **EcompTeX** é um conjunto de templates em LaTeX criados durante a graduação em Engenharia de Computação pela Escola Politécnica da Universide de Pernambuco (POLI-UPE).
 
 ## Trabalho Acadêmico
 
