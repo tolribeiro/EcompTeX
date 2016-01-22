@@ -8,6 +8,4 @@ Trabalho Acadêmico
 
 Este tema serve para trabalhos comuns que temos que entregar durante a graduação, contendo uma folha de rosto simples, um sumário e o conteúdo em si.
 
-<br/>
-<img src="http://toribeiro.com/static/img/modelo-trabalho-print.jpg" width="406" height="537" class="img-responsive center-block" />
-<br/>
+
