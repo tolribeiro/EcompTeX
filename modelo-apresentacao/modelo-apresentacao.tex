@@ -1,0 +1,373 @@
+\documentclass[brazil]{beamer}
+\let\Tiny=\tiny
+%\usepackage{lmodern}
+\usefonttheme{serif}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[brazil]{babel} 
+\usepackage{amssymb,amsmath}
+\usetheme{Amsterdam}
+
+\begin{document}
+	\begin{frame}
+		\begin{figure}[!htp]
+			{\includegraphics[scale=0.2, width=1.2cm]{../imagens/poli.png}}\hfill%
+			{\includegraphics[scale=0.3, width=1.8cm]{../imagens/ecomp.png}}%
+		\end{figure}
+		\begin{center}
+			\vspace{0.5cm}
+			\small{\textbf{Título da Apresentação}}\\[0.2cm]
+			\small{Sub-título da apresentação}\\[0.5cm]
+			\begin{center}
+				\begin{tabular}{rl}
+					\scriptsize{{\bf Disciplina:}} & \scriptsize{{\sf COMP01 - Nome da Disciplina}}\\
+					\scriptsize{{\bf Professor:}} & \scriptsize{{\sf Nome do professor}}\\
+					\scriptsize{{\bf Aluno:}} & \scriptsize{{\sf Nome do aluno}}\\
+					\scriptsize{{\bf Outro:}} & \scriptsize{{\sf Conteúdo adicional}}\\
+				\end{tabular}
+				\vspace{0.2cm}
+				\begin{center}
+					\scriptsize{{\sc mês ano}}\\\scriptsize{{\sc Outra informação}}\\
+				\end{center}
+			\end{center}
+		\end{center}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Agenda}
+		\tableofcontents[hideallsubsections]
+	\end{frame}
+
+	% ============= Introdução =================
+
+	\section{Introdução}
+
+	\subsection{O Problema}
+
+	\begin{frame}
+		\frametitle{Introdução}
+		\framesubtitle{O Problema}
+		%\framesubtitle{O Problema da Poluição Sonora}
+		% ============= Conteúdo =================
+		\begin{center}
+			Quem nunca passou pela seguinte situação?
+		\end{center}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Introdução}
+		\framesubtitle{Poluição Sonora}
+		%\framesubtitle{O Problema da Poluição Sonora}
+		% ============= Conteúdo =================
+		De fato, em um típico ambiente urbano, rodeado de construções, avenidas, bares e restaurantes, estamos expostos à:\\[0.5cm] 
+		\begin{center}
+			\textbf{Poluição Sonora}.
+		\end{center}
+		\pause
+		\begin{flushleft}
+			Uma das piores consequências:
+		\end{flushleft} 
+		\begin{center}
+			\textit{Perda Auditiva Induzida por Ruído} (PAIR).
+		\end{center}
+		
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Introdução}
+		\framesubtitle{Combate à Poluição Sonora}
+		%\framesubtitle{Como combater?}
+		% ============= Conteúdo =================
+		\vspace{0.5cm}
+		No contexto da nossa cidade, a Prefeitura da Cidade do Recife (PCR) e outros órgãos ligados, realizam a fiscalização.
+	\end{frame}
+
+	\subsection{Motivação do Trabalho}
+
+	\begin{frame}
+		\frametitle{Introdução}
+		\framesubtitle{Motivação do Trabalho}
+		% ============= Conteúdo =================
+		A ideia do sistema medidor desenvolvido neste trabalho tem por motivos principais:\\[0.2cm]
+		\begin{enumerate}
+			\item Diminuir níveis de poluição; %de que forma?
+			\item Identificar e punir emissores; %
+			\item Monitorar locais remotamente;
+			\item Viabilizar dados à população;
+		\end{enumerate}
+	\end{frame}
+
+	% ===========  Fundamentacao  ================
+
+	\section{Fundamentação Teórica}
+
+	\subsection{O Som e suas características}
+
+	\begin{frame}
+		\frametitle{Fundamentação Teórica}
+		\framesubtitle{O Som e suas características}
+		% ============= Conteúdo =================
+		\begin{block}{Definição}
+			\textit{Sons} são vibrações se propagando através de um meio, onde um objeto vibrador comprime e espalha moléculas (do meio).
+		\end{block}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Fundamentação Teórica}
+		\framesubtitle{O Som e suas características}
+		% ============= Conteúdo =================
+		O ouvido humano consegue perceber variações de pressão e a unidade utilizada para expressar estas medidas é o \textit{Pascal} (Pa). 
+		\begin{align}
+		   1 \ pascal \ & = 1 \ Pa \ = 1 \ N/m^2
+		\end{align}
+		\vspace{0.5cm}Homenagem ao cientista e filósofo francês Blaise Pascal.
+	\end{frame}	
+
+	\begin{frame}
+		\frametitle{Fundamentação Teórica}
+		\framesubtitle{O Som e suas características}
+		% ============= Conteúdo =================
+		O som \textit{mais suave} que podemos escutar tem uma pressão medida de:
+		\begin{center}
+			$0,000020 \ Pa = 20 \ \mu Pa$
+		\end{center}
+		Este é o \textbf{limiar da audição}.
+	\end{frame}	
+
+	\begin{frame}
+		\frametitle{Fundamentação Teórica}
+		\framesubtitle{O Som e suas características}
+		% ============= Conteúdo =================
+		Já um som que nos \textit{causa dor} tem uma pressão medida de:
+		\begin{center}
+			$2.000.000.000 \ \mu Pa$
+		\end{center}
+		Este é o \textbf{Limiar da Dor}.
+	\end{frame}	
+
+	\begin{frame}
+		\frametitle{Fundamentação Teórica}
+		\framesubtitle{O Som e suas características}
+		% ============= Conteúdo =================
+		%Agora imagine no nosso cotidiano, se as medições de som fossem em Pascal?
+		\begin{quote}
+			Seu estabelecimento está emitindo $200.000 \ \mu Pa$!
+		\end{quote}
+		ou...
+		\begin{quote}
+			Dá pra falar mais baixo? a conversa de vocês está medindo $20.000 \ \mu Pa$!
+		\end{quote}
+		É um tanto quanto inviável.
+	\end{frame}	
+
+	\subsection{A Escala Decibél}
+
+	\begin{frame}
+		\frametitle{Fundamentação Teórica}
+		\framesubtitle{A Escala Decibél}
+		% ============= Conteúdo =================
+		Uma escala logarítmica resolve o problema dos valores grandes.
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Fundamentação Teórica}
+		\framesubtitle{Valores em Pa $\times$ Valores em Decibéis}
+		% ============= Conteúdo =================
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Fundamentação Teórica}
+		\framesubtitle{{\it Sound Pressure Level} (SPL)}
+		% ============= Conteúdo =================
+		Portanto, o valor de \textit{Nível de Pressão Sonora} em decibéis, é obtido pela fórmula:
+
+		\begin{align}\label{eq-dec}
+		  SPL \ = \ 20\cdot log_{10} \left(\frac{p}{p_0}\right)
+		\end{align}
+
+		sendo $p$ o valor medido em $Pa$, e $p_0$ o valor de referência padrão que é de $20 \ \mu Pa$ -- limiar da audição humana. 
+	\end{frame}
+
+	\subsection{Como medir Som}
+
+	\begin{frame}
+		\frametitle{Fundamentação Teórica}
+		\framesubtitle{Medidor de Níveis de Pressão Sonora (MNPS)}
+		% ============= Conteúdo =================
+		\vspace{0.4cm}
+		\footnotesize{O instrumento utilizado para medir níveis de pressão sonora é chamado \textit{Medidor de Nível de Pressão Sonora} (MNPS). }
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Fundamentação Teórica}
+		\framesubtitle{Medidor de Níveis de Pressão Sonora (MNPS)}
+		% ============= Conteúdo =================
+		Algumas das principais desvantagem de um MNPS comum são:
+
+		\begin{itemize}
+			\item Valor relativamente alto;
+			\item Impossibilidade de medição remota;
+			\item Não salva dados medidos;
+		\end{itemize}
+
+		A solução mais utilizada é chamada de MNPS Integrador, com custo médio de mais de R\$2000,00 (!).
+	\end{frame}
+
+	% ===========  Proposta do Sistema  =============
+
+	\section{Proposta de Sistema}
+
+	\subsection{Projeto do {\it Hardware}}
+
+	\begin{frame}
+		\frametitle{Proposta do Sistema}
+		% ============= Conteúdo =================
+		\begin{block}{Solução Completa}
+			Desenvolvimento de um sistema de {\it hardware} e {\it software}, contendo um medidor de baixo custo com capacidade de monitoramento remoto via \textit{software}.
+		\end{block}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Proposta do Sistema}
+		\framesubtitle{Diagrama do {\it hardware}}
+		% ============= Conteúdo =================
+		\begin{center}
+			\begin{block}{\small{Solução em {\it hardware}}}
+				\small{Componentes conectados em placa de protótição, medindo valores de amplitude sonora e enviando para servidor {\it web}.}
+			\end{block}
+		\end{center}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Proposta do Sistema}
+		\framesubtitle{Arduino}
+		% ============= Conteúdo =================
+	  	\footnotesize{{\bf Propósito no sistema:} atuar como o ``cérebro'' do sistema de {\it hardware}, controlando os demais componentes a partir do programa gravado no seu microcontrolador.}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Proposta do Sistema}
+		\framesubtitle{Detector de Som}
+		% ============= Conteúdo =================
+	  	{\bf Propósito no sistema:} leitura da amplitude sonora do ambiente.
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Proposta do Sistema}
+		\framesubtitle{Módulo ESP8266}
+		% ============= Conteúdo =================
+	  	{\bf Propósito no sistema:} equipar o sistema com Internet ao conectar-se ao WiFi do local.
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Proposta do Sistema}
+		\framesubtitle{{\it Liquid Crystal Display} (LCD)}
+		% ============= Conteúdo =================
+	  	{\bf Propósito no sistema:} dispositivo de saída para que o usuário possa verificar valores medidos.
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Proposta do Sistema}
+		\framesubtitle{{\it Light Emitting Diode} (LED)}
+		% ============= Conteúdo =================
+	  	{\bf Propósito no sistema:} indicar se os níveis emitidos pelo local estão adequados ou não, de maneira intuitiva.
+	\end{frame}
+
+	\subsection{Projeto do {\it Software}}
+
+	\begin{frame}
+		\frametitle{Proposta do Sistema}
+		\framesubtitle{Desenvolvimento do \textit{Software}}
+		% ============= Conteúdo =================
+		\vspace{0.5cm}
+		\begin{block}{\small{Solução em {\it software}}}
+				\small{Aplicação em {\it software} para iOS, permitindo leitura dos valores enviados pelo medidor em {\it hardware}.}
+			\end{block}
+	\end{frame}
+
+	% ===========  Resultados  =============
+
+	\section{Resultados e Testes}
+
+	\subsection{Medição no {\it Hardware}}
+
+	\begin{frame}
+		\frametitle{Resultados e Testes}
+		\framesubtitle{Medição no {\it Hardware}}
+		% ============= Conteúdo =================
+		\vspace{0.5cm}
+		Os componentes do medidor foram montados em uma placa de prototipação MSB-500, sendo testados na placa tanto com alimentação de uma bateria de 9V quanto USB (5V).
+
+		\vspace{1cm}
+		
+		A calibração do valor de referência foi feita a partir do aplicativo {\it Decibels}.
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Resultados e Testes}
+		\framesubtitle{Medição no {\it Hardware}}
+		% ============= Conteúdo =================
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Resultados e Testes}
+		\framesubtitle{Medição no {\it Hardware}}
+		% ============= Conteúdo =================
+		\vspace{0.2cm}
+		\footnotesize{Permanecendo ligado por volta de 1 hora e 40 minutos numa sala com pessoas conversando, os valores medidos e enviados para o servidor {\it web} podem ser vistos no gráfico.}
+	\end{frame}
+
+	\subsection{Medição no {\it Software}}
+
+	\begin{frame}
+		\frametitle{Resultados e Testes}
+		\framesubtitle{{\it Software} desenvolvido}
+		% ============= Conteúdo =================
+		\footnotesize{A aplicação foi desenvolvida, compilada e testada em um aparelho iPhone 5, conectado à Internet. Foi possível abrir o {\it app} e ler o último valor calculado e enviados ao servidor através do {\it hardware} desenvolvido.}
+
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Resultados e Testes}
+		\framesubtitle{{\it Software} desenvolvido}
+		% ============= Conteúdo =================
+		\footnotesize{$\blacklozenge$ Pontos no mapa do Centro do Recife: locais que podem ser monitorados.}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Resultados e Testes}
+		\framesubtitle{{\it Software} desenvolvido}
+		% ============= Conteúdo =================
+		\begin{center}
+			\footnotesize{$\blacklozenge$ Usuário pode escolher que pontos quer saber valores medidos.}
+		\end{center}
+	\end{frame}
+
+		\begin{frame}
+		\frametitle{Resultados e Testes}
+		\framesubtitle{{\it Software} desenvolvido}
+		% ============= Conteúdo =================
+		\begin{center}
+			\footnotesize{$\blacklozenge$ Usuário abre tela de Detalhes e vê último valor medido.}
+		\end{center}
+	\end{frame}
+
+	% ===========  Trabalhos Futuros  =============
+
+	\section{Trabalhos Futuros}
+
+	\subsection{Novas ideias e melhoramentos}
+
+	\begin{frame}
+		\frametitle{Trabalhos Futuros}
+		\framesubtitle{Novas ideias e melhoramentos}
+		% ============= Conteúdo =================
+		\footnotesize{Uma das principais ideias futuras é projetar uma placa de circuito impresso que abrigue todos os componentes. Porém também pretende-se:}
+		\begin{itemize}
+			\item Desenvolver aplicação multi-plataforma em {\it software}: {\it Android} e {\it Windows Phone};
+			\item Melhorar a precisão a partir da calibração com MNPS profissional;
+			\item Implementar {\it features} de envio de {\it e-mail} e ligação do {\it app} desenvolvido;
+		\end{itemize}
+	\end{frame}
+
+\end{document}
