@@ -17,3 +17,11 @@ Este tema pode ser utilizado para entrega de questionários valendo pontuação,
 <br/>
 <img src="http://toribeiro.com/static/img/modelo-questoes-prova.jpg" width="323" height="427" class="img-responsive center-block" />
 <br/>
+
+## Slides de apresentação 
+
+Utilizando-se do modelo `Amsterdam`, você pode utilizar este modelo de slides para apresentações no geral, sejam de seminários, projeto em grupo e outros.
+
+<br/>
+<img src="http://toribeiro.com/static/img/modelo-print-apresentacao.png" width="393" height="294" class="img-responsive center-block" />
+<br/>
