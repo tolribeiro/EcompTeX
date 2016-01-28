@@ -31,5 +31,5 @@ Utilizando-se do modelo `Amsterdam`, você pode utilizar este modelo de slides p
 Tal modelo pode ser utilizado para elaboração de TCC. Este projeto utiliza-se da classe `abnTeX2`, portanto certifique-se que a mesma encontra-se instalada no seu ambiente LaTeX.
 
 <br/>
-<img src="https://raw.githubusercontent.com/tolribeiro/tolribeiro.github.io/master/static/img/modelo-projeto-conclusao.png" width="393" height="294" class="img-responsive center-block" />
+<img src="https://raw.githubusercontent.com/tolribeiro/tolribeiro.github.io/master/static/img/modelo-projeto-conclusao.png" width="453" height="427" class="img-responsive center-block" />
 <br/>
