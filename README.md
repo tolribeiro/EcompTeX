@@ -25,3 +25,11 @@ Utilizando-se do modelo `Amsterdam`, você pode utilizar este modelo de slides p
 <br/>
 <img src="http://toribeiro.com/static/img/modelo-print-apresentacao.png" width="393" height="294" class="img-responsive center-block" />
 <br/>
+
+## Trabalho de Conclusão de Curso (TCC)
+
+Tal modelo pode ser utilizado para elaboração de TCC. Este projeto utiliza-se da classe `abnTeX2`, portanto certifique-se que a mesma encontra-se instalada no seu ambiente LaTeX.
+
+<br/>
+<img src="http://toribeiro.com/static/img/modelo-projeto-conclusao.png" width="393" height="294" class="img-responsive center-block" />
+<br/>
